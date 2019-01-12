@@ -5,7 +5,7 @@ import android.os.Bundle
 
 class MainActivity : AppCompatActivity() {
 
-    //TODO: https://youtu.be/tiXP__iYtq4?t=1418
+    //TODO: https://youtu.be/tiXP__iYtq4?t=1468
 
     /**
       "https://images.pexels.com/photos/220421/pexels-photo-220421.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
