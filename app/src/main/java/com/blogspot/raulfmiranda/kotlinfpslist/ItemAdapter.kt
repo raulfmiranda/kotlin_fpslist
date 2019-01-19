@@ -29,14 +29,16 @@ class ItemAdapter(val _items: MutableList<Item>) : RecyclerView.Adapter<ItemAdap
                 it.text = items[position].text
             }
 
-            val uri = Uri.parse(items[position].url)
+            val url = items[position].url
+            val uri = Uri.parse(url)
+            val img = it.imgItem
+
             Picasso
                 .get()
-                .load(uri.toString())
+                .load(uri.toString()).fit()
                 .placeholder(R.drawable.ic_launcher_background)
-                .into(it.imgItem)
-
-
+                .error(R.drawable.ic_launcher_foreground)
+                .into(img)
         }
     }
 
