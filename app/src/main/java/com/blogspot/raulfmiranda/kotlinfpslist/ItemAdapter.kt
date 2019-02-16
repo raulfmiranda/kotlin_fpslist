@@ -36,7 +36,6 @@ class ItemAdapter(val _items: MutableList<Item>) : RecyclerView.Adapter<ItemAdap
             Picasso
                 .get()
                 .load(uri.toString()).fit()
-                .placeholder(R.drawable.ic_launcher_background)
                 .error(R.drawable.ic_launcher_foreground)
                 .into(img)
         }
